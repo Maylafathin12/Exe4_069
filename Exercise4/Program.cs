@@ -11,6 +11,8 @@ namespace Exercise4
     {
         //menggunakan array
         int[] arr = new int[87];
+        public int info;
+        public Array next;
         //number of elements in the array
         int n;
         //get the top number of elements to store in the array
@@ -24,18 +26,42 @@ namespace Exercise4
 
         public Stacks()
         {
-            top = null;
+            int top = -1;
         }
         bool empty()
         {
-            if (top == null)
+            if (top == -1)
                 return (true);
             else
                 return (false);
+
+            Console.WriteLine("\n.Stack Empty");
+        }
+        public void pop()
+        {
+
         }
         public void push(int element)
         {
-           
+            Array arri;
+            arri = new Array(element, null);
+
+            arri.next = top;
+            top = arri;
+            Console.WriteLine("\n" + element + "pushed.");
+        }
+        public void display()
+        {
+            Array tmp;
+            if (empty())
+                Console.WriteLine("\nStack Empty");
+            else
+            {
+                for (tmp = top; tmp != null; tmp = tmp.next)
+                {
+
+                }
+            }
         }
 
 
