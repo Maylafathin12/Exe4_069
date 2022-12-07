@@ -28,18 +28,18 @@ namespace Exercise4
         {
             int top = -1;
         }
-        bool empty()
-        {
-            if (top == -1)
-                return (true);
-            else
-                return (false);
-
-            Console.WriteLine("\n.Stack Empty");
-        }
+       
         public void pop()
         {
+            bool empty()
+            {
+                if (top == -1)
+                    return (true);
+                else
+                    return (false);
 
+                Console.WriteLine("\n.Stack Empty");
+            }
         }
         public void push(int element)
         {
@@ -59,7 +59,28 @@ namespace Exercise4
             {
                 for (tmp = top; tmp != null; tmp = tmp.next)
                 {
-
+                    Console.WriteLine(tmp.info);
+                }
+                Console.WriteLine();
+            }
+        }
+        static void Main(string[] args)
+        {
+            Stacks s = new Stacks();
+            while (true)
+            {
+                Console.WriteLine();
+                Console.WriteLine("\n***Stack menu\n***");
+                Console.WriteLine("1. Pop ");
+                Console.WriteLine("2. Push");
+                Console.WriteLine("3. Display");
+                Console.WriteLine("4. Exit");
+                Console.WriteLine("\nEnter your choice: ");
+                string sInput = Console.ReadLine();
+                char ch = Convert.ToChar(sInput == "" ? "0" : sInput);
+                switch (ch)
+                {
+                    case'1'
                 }
             }
         }
