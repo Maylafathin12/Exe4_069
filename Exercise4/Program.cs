@@ -95,7 +95,12 @@ namespace Exercise4
                         break;
                     case '3':
                         s.display();
-                        break
+                        break;
+                    case '4':
+                        return;
+                    default:
+                        Console.WriteLine("\nUnvalid choice");
+                        break;
                 }
             }
         }
