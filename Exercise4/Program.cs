@@ -81,17 +81,17 @@ namespace Exercise4
                 switch (ch)
                 {
                     case '1':
-                        Console.Write("\nEnter a number: ");
-                        int num = Convert.ToInt32(Console.ReadLine());
-                        s.push(num);
-                        break;
-                    case '2':
                         if (s.empty())
                         {
                             Console.WriteLine("\nStack Empty");
                             break;
                         }
                         s.pop();
+                        break;
+                    case '2':
+                        Console.WriteLine("\nEnter a number: ");
+                        int num = Convert.ToInt32(Console.ReadLine());
+                        s.push(num);
                         break;
                 }
             }
