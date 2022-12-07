@@ -11,7 +11,36 @@ namespace Exercise4
     {
         //menggunakan array
         int[] arr = new int[87];
+        //number of elements in the array
+        int n;
+        //get the top number of elements to store in the array
         int top;
+
+    }
+
+    class Stacks
+    {
+        int top = -1;
+
+        public Stacks()
+        {
+            top = null;
+        }
+        bool empty()
+        {
+            if (top == null)
+                return (true);
+            else
+                return (false);
+        }
+        public void push(int element)
+        {
+           
+        }
+
+
+
+
 
     }
 }
